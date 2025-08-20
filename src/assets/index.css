@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+ body {
+    background-color: darkred;
+ }
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav a {
+    font-family: "Spirax", sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-decoration: none;
+    margin: 1em;
+}
+
+main{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+h1 {
+    font-family: "Spirax", sans-serif;
+    color: darkred;
+    font-size: 6rem;
+    margin: 0px;
+}
+
+.photo-container-hot,
+.photo-container-juicy,
+.photo-container-cosy {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-container-hot{
+    background-image: url(./hot.jpg);
+}
+
+.photo-container-juicy {
+    background-image: url(./juicy.jpg);
+}
+
+.photo-container-cosy {
+    background-image: url(./cosy.jpg);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 75%;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(139, 0, 0, 0.8);
+    padding: 1rem;
+    width: 45vw;
+    text-align: center;
+}
+
+.box1 {
+    position: relative;
+    left: -6rem;
+}
+.box2 {
+    position: relative;
+    left: 10rem;
+}
+.container p {
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0px;
+    padding: 0.5rem 1rem;
+}
+
+.menu-container {
+    display: flex;
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: space-between;
+    width: 60vw;
+    box-sizing: border-box;
+    padding: 1.5rem 3rem;
+}
+
+.menu-container .menu-prices {
+    text-align: end;
+}
+
+.menu-prices,
+.menu-items{
+    flex: 0.5;
+    margin: 0px;
+}
+
+@media (max-width: 767px) {
+    header {
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        font-family: "Spirax", sans-serif;
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+        margin:1rem;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    .box1 {
+    position: static;
+    }
+
+    .container {
+    width: 75vw;
+    padding: 0px;
+    }
+
+    .menu-container {
+    justify-content: space-between;
+    width: 75vw;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    }
+}
